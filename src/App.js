@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Layout from "./Layout";
@@ -8,7 +8,7 @@ import "./styles/style.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />}></Route>
@@ -16,7 +16,7 @@ function App() {
           <Route path="*" element={<Page404 />}></Route>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
