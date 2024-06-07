@@ -8,7 +8,7 @@ const Layout = () => {
       <nav>
         <ul>
           <li>
-            <Link to="http://localhost:3000/">Free Image</Link>
+            <Link to="/">Free Image</Link>
           </li>
         </ul>
       </nav>
